@@ -1,0 +1,149 @@
+/* استيراد خط Cairo */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+/* تنسيقات عامة */
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* تنسيق الهيدر (أصفر ورمادي) */
+.navbar {
+    background-color: #212529 !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #ffc107;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #ffc107 !important;
+}
+
+.nav-link {
+    color: #e9ecef !important;
+}
+
+.nav-link.active {
+    color: #ffc107 !important;
+}
+
+/* الواجهة الرئيسية */
+header#home {
+    background: linear-gradient(rgba(33, 37, 41, 0.85), rgba(33, 37, 41, 0.7)), 
+                url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 120px 0;
+    border-bottom: 5px solid #ffc107;
+}
+
+header h1 {
+    line-height: 1.5;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* تنسيق العلم الجديد بجوار العنوان */
+.header-flag {
+    width: 60px;       /* حجم صغير مناسب */
+    height: auto;
+    margin-left: 15px; /* مسافة بين العلم والنص */
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.3));
+}
+
+/* الأزرار الرئيسية */
+header .btn-primary {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+    font-weight: bold;
+}
+
+header .btn-primary:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+    color: #000;
+}
+
+/* أزرار الفلترة */
+.filter-btn {
+    border-radius: 50px;
+    padding: 8px 25px;
+    font-weight: 700;
+    margin: 5px;
+    transition: all 0.3s ease;
+    border: 2px solid #6c757d;
+    color: #495057;
+}
+
+.filter-btn.active {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+}
+
+/* تنسيق الجدول */
+.table-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    background: white;
+    border-top: 4px solid #ffc107;
+}
+
+.table thead {
+    background-color: #343a40 !important;
+    color: white;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #fff3cd;
+    transform: scale(1.005);
+    transition: transform 0.2s ease;
+}
+
+.table td, .table th {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+/* تنسيق النموذج */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-top: 5px solid #ffc107;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 4px rgba(255, 193, 7, 0.25);
+}
+
+.btn-success {
+    background-color: #212529;
+    border-color: #212529;
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+}
+
+/* الفوتر */
+footer {
+    background-color: #1a1e21;
+    color: #adb5bd;
+    border-top: 1px solid #333;
+    margin-top: auto;
+}
